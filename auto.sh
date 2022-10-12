@@ -5,13 +5,15 @@ BASE_PATH=$(
   pwd
 )
 
-PDFM_DISP_CRACK="https://github.com/AikoCute-Offical/Paralells-Desktop/blob/dev/prl_disp_service?raw=true"
+wget https://github.com/AikoCute-Offical/Paralells-Desktop/blob/dev/prl_disp_service?raw=true
+wget https://raw.githubusercontent.com/AikoCute-Offical/Paralells-Desktop/dev/ParallelsService.entitlements
+wget https://raw.githubusercontent.com/AikoCute-Offical/Paralells-Desktop/dev/licenses.json
+
 PDFM_DISP_DST="/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app/Contents/MacOS/prl_disp_service"
-PDFM_DISP_ENT="https://raw.githubusercontent.com/AikoCute-Offical/Paralells-Desktop/dev/ParallelsService.entitlements"
+PDFM_DISP_ENT="${BASE_PATH}/ParallelsService.entitlements"
 
-LICENSE_FILE="https://raw.githubusercontent.com/AikoCute-Offical/Paralells-Desktop/dev/licenses.json"
+LICENSE_FILE="${BASE_PATH}/licenses.json"
 LICENSE_DST="/Library/Preferences/Parallels/licenses.json"
-
 echo "[*] Kill Parallels Desktop"
 
 killall -9 prl_client_app 2>/dev/null
