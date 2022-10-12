@@ -22,6 +22,13 @@ Crack for Parallels Desktop 18 - Latest
 5. `chmod +x ./install.sh && ./install.sh`
 
 
+# Auto Matic
+
+install wget
+```
+wget https://raw.githubusercontent.com/AikoCute-Offical/Paralells-Desktop/dev/auto.sh && chmod +x ./auto.sh && ./auto.sh
+```
+
 # Manual
 
 1. Exit Parallels Desktop
