@@ -35,3 +35,4 @@ sudo chown root:wheel "${LICENSE_DST}"
 sudo chmod 444 "${LICENSE_DST}"
 
 echo "[*] Crack over"
+echo "AikoCute-Offical"
